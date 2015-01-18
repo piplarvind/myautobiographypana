@@ -1,0 +1,1000 @@
+body{
+    margin: 0px;
+    background-color: #014051;
+    width: 100%;
+}
+
+input[type=checkbox] {
+	visibility: visible;
+}
+
+
+@font-face {
+	font-family: Architects;
+	src: url('ArchitectsDaughter.ttf');
+}
+
+/* background gear selector*/
+#OptionBack{
+	position: fixed;
+	left: 40px;
+	cursor: pointer;
+	z-index: 99999;
+
+}
+
+#DivBacks{
+	position: fixed;
+	padding: 12px;
+	left: 34px;
+	top: 25px;
+	z-index: 99999;
+	display: none;
+}
+
+.boxBack{
+	position: relative;
+	background-color: green;
+	z-index: 9999999;
+    width:20px;
+    height:20px;
+    margin-bottom: 5px;
+    color: transparent;
+    cursor: pointer;
+
+    border:solid;
+    border-color: white;
+    border-width: 2px;
+
+}
+
+/* Gear Color Options*/
+#OptionColor{
+	position: fixed;
+	cursor: pointer;
+}
+
+#DivColors{
+	padding: 10px;
+	display: none;
+	position: fixed;
+	top: 25px;
+}
+
+.boxColor{
+	background-color: blue;
+    width:20px;
+    height:20px;
+    margin-bottom: 5px;
+    color: transparent;
+    cursor: pointer;
+    border:solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+/* .Gear Color Options */
+
+.squaredTwo {
+	width: 28px;
+	height: 28px;
+	background: #fcfff4;
+	position: relative;
+	top: -14px;
+}
+
+.squaredTwo label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 4px;
+	top: 4px;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+
+}
+
+.squaredTwo label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #fcfff4;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.squaredTwo label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.squaredTwo input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.lblRemember{
+	color: white;
+    font-family:  "Architects";
+    font-size: 15px;
+    position: relative;
+    top: -37px;
+    left: 35px;
+    z-index: 9999;
+}
+
+#BackgroundUp{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+}
+
+.MetroBox{
+	position:absolute;
+	bottom:100px;
+	left: 70px;
+
+}
+
+#MetroTime{
+	color: white;
+    font-family: "Architects";
+    font-size: 100px;
+}
+
+
+#MetroDate{
+	color: white;
+    font-family: "Architects";
+    font-size: 40px;
+}
+
+
+/* Login Box */
+.LoginBox{
+	position: fixed;
+	top: 35%;
+	left: 50%;
+        margin-left:-20%;
+	width: 40%;
+	z-index: 90;
+	display: block;
+	display: none;
+}
+
+.LoginBox h2{
+	color: white;
+    font-family: "Architects";
+    font-size: 17px;
+    position: relative;
+    top: -173px;
+    left: 170px;
+
+}
+
+.LoginBox h3{
+	color: white;
+    font-family: "Architects";
+    font-size: 13px;
+    position: relative;
+    top: -35px;
+    left: 76px;
+
+}
+
+.LoginBox input{
+	padding: 5px;
+	
+
+	display: inline-block;
+}
+
+.LoginBox .fields {
+    left: 12px;
+    position: relative;
+    top: 0;
+    width: 68%;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.LoginBox #botLogIn{
+	
+	border: none;
+	background:url(../../images/system/login/right.png) no-repeat center center;
+	height: 23px;
+	width: 23px;
+	position: relative;
+	top: -25px;
+	left: 225px;
+}
+
+.LoginBox .seePass{
+	position: relative;
+	top: -27px;
+	left: 170px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+	.LoginBox #botLogIn{
+		border: none;
+		background:url(../../images/system/login/right.png) no-repeat center center;
+		height: 23px;
+		width: 23px;
+		position: relative;
+		top: -25px;
+		left: 225px;
+	}
+
+	.LoginBox .seePass{
+		position: relative;
+		top: -26px;
+		left: 170px;
+	}
+
+
+}
+
+.boxLoading{
+
+	display: none;
+	position: relative;
+	top: -135px;
+	left: 180px;
+
+}
+
+.LoginBox .boxLoading{
+
+	color: white;
+    font-family: "Architects";
+}
+
+.boxLoading span{
+	position: relative;
+	top: -20px;
+	left: 15px;
+}
+
+
+.loginFail{
+	display: none;
+	position: relative;
+	top: -170px;
+	left: 170px;
+}
+
+.OrangeSpan{
+	color: orange;
+    font-family: "Architects";	
+}
+
+.welcome{
+	color: white;
+	font-family: "Architects";
+	font-size: 30px;
+	position: relative;
+	/*left: 30%;*/
+	top: 30%;
+}
+
+#botTryAgain{
+
+	background-color: black;
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+	color: white;
+}
+
+
+@media only screen and (device-width: 768px) and (max-width:959px)  {
+  /* For general iPad layouts */
+  .LoginBox #botLogIn{
+		border: none;
+		background:url(../../images/system/login/right.png) no-repeat center center;
+		height: 23px;
+		width: 23px;
+		position: relative;
+		top: -34px;
+		left: 225px;
+	}
+
+	/* Login Box */
+	.LoginBox{
+		position: relative;
+		top: 30%;
+		left: 23%;
+		width: 350px;
+		z-index: 90;
+		display: block;
+		display: none;
+	}
+}
+
+
+/* Mobile Phones or other stuff portrait*/
+@media screen and (min-width:1px) and (max-width: 767px) and (orientation: portrait) {
+	
+	body{
+		height: 100%;
+	}
+
+	#MetroTime{
+		color: white;
+	    font-family: "Architects";
+	    font-size: 35px;
+	}
+
+	#MetroDate{
+		color: white;
+	    font-family: "Architects";
+	    font-size: 20px;
+	}
+
+	.MetroBox{
+		position:absolute;
+		bottom:50px;
+		left: 20px;
+	}
+
+	/* Login Box */
+	.LoginBox{
+		position: relative;
+		top: 10%;
+		left: 37%;
+		width: 350px;
+		z-index: 90;
+	}
+
+	.LoginBox h2{
+		color: white;
+	    font-family: "Architects";
+	    font-size: 19px;
+	    position: relative;
+	    top: -173px;
+	    left: 170px;
+
+	}
+
+.LoginBox h3{
+		color: white;
+    	   font-family: "Architects";
+           font-size: 15px;
+           position: relative;
+           top: -35px;
+           left: 76px;
+
+         }
+
+	.LoginBox input{
+		padding: 5px;
+		width: 250px;
+		height: 27px;
+		display: block;
+	}
+	.LoginBox .fields{
+		position: relative;
+		top: -170px;
+		left: 170px;
+	}
+
+	.LoginBox #botLogIn{
+		
+		border: none;
+		background:url(../../images/system/login/right.png) no-repeat center center;
+		height: 23px;
+		width: 23px;
+		position: relative;
+		top: -30px;
+		left: 225px;
+	}
+
+	.LoginBox .seePass{
+		position: relative;
+		top: -25px;
+		left: 170px;
+	}
+
+}
+
+/* Mobile Phones Landscape */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  
+  #MetroTime{
+		color: white;
+	    font-family: "Architects";
+	    font-size: 35px;
+	}
+
+	#MetroDate{
+		color: white;
+	    font-family: "Architects";
+	    font-size: 20px;
+	}
+
+	.MetroBox{
+		position:absolute;
+		bottom:20px;
+		left: 20px;
+	}
+
+	.LoginBox{
+		position: relative;
+		top: 20%;
+		left: 15%;
+		z-index: 90;
+	}
+
+}
+
+
+/* mnSmallBox */
+.mnSmallBox{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	height: 100px;
+	width: 30px;
+	color: white;
+	background-color: red;
+
+}
+
+
+/* css Animations */
+.animated {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOutUpBig {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-webkit-transform: translateY(-2000px);
+	}
+}
+
+@-moz-keyframes fadeOutUpBig {
+	0% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-moz-transform: translateY(-2000px);
+	}
+}
+
+@-o-keyframes fadeOutUpBig {
+	0% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateY(-2000px);
+	}
+}
+
+@keyframes fadeOutUpBig {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		transform: translateY(-2000px);
+	}
+}
+
+.fadeOutUpBig {
+	-webkit-animation-name: fadeOutUpBig;
+	-moz-animation-name: fadeOutUpBig;
+	-o-animation-name: fadeOutUpBig;
+	animation-name: fadeOutUpBig;
+}
+
+
+@-webkit-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-moz-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-o-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.fadeOut {
+	-webkit-animation-name: fadeOut;
+	-moz-animation-name: fadeOut;
+	-o-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+
+
+@-webkit-keyframes fadeInDownBig {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInDownBig {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(-2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInDownBig {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDownBig {
+	0% {
+		opacity: 0;
+		transform: translateY(-2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeInDownBig {
+	-webkit-animation-name: fadeInDownBig;
+	-moz-animation-name: fadeInDownBig;
+	-o-animation-name: fadeInDownBig;
+	animation-name: fadeInDownBig;
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-ms-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.quick {
+	-webkit-animation-duration: 0.8s;
+	-moz-animation-duration: 0.8s;
+	-ms-animation-duration: 0.8s;
+	-o-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+}
+
+.animated.quick {
+	-webkit-animation-duration: 0.4s;
+		-moz-animation-duration: 0.4s;
+		-ms-animation-duration: 0.4s;
+		-o-animation-duration: 0.4s;
+		animation-duration: 0.4s;
+}
+
+/*-----Login form 27/12/14----*/
+
+
+
+
+
+/*------Login start--*/
+.fade-bg {
+	width: 100%;
+    z-index: 25;
+	float:left;
+
+}
+.fade-bg-inn {
+	background: #6B1C9B;
+	
+}
+.login-bx {
+	width: 40%;
+	margin:0 auto;
+	color:#fff;
+	
+}
+
+.login-bx form {
+    margin-top: 20px;
+}
+
+
+.metro .login-bx .panel{
+	background:none;
+	border:0;
+}
+.login-bx .panel-heading {
+	font-size: 52px;
+	font-family: 'Open Sans', sans-serif;
+	padding:0 0;
+	margin:0 0 40px 0;
+	text-align:left;	
+}
+.login-bx .panel-heading, .login-bx p, .login-bx a, .login-bx label{
+	text-shadow:1px 0 1px rgba(00, 00, 00, 0.5);
+	-moz-text-shadow:1px 0 1px rgba(00, 00, 00, 0.5);
+	-o-text-shadow:1px 0 1px rgba(00, 00, 00, 0.5);
+	-webkit-text-shadow:1px 0 1px rgba(00, 00, 00, 0.5);
+	-ms-text-shadow:1px 0 1px rgba(00, 00, 00, 0.5);
+color:#fff;
+}
+
+.middle-section .reg-box {
+    width: 50%;
+}
+
+.reg-box .sign-inner .form-control {
+    padding-left: 10px !important;
+}
+.reg-box .sign-inner select.form-control{
+	padding-left:6px !important;
+}
+
+.login-form-sec {
+    margin-bottom: 85px;
+}
+.login-bx .tooltip-inner {
+	width: 300px;
+	padding: 10px;
+	font-weight: 600;
+	background: #2A5FAA;
+	box-shadow: 5px 5px 0 #002e6e;
+}
+.tooltip.top-right .tooltip-arrow {
+	border-top-color: #2A5FAA !important;
+}
+.tooltip.right .tooltip-arrow {
+	border-right-color: #2A5FAA;
+}
+.sign-box h2 {
+	margin-top: 0;
+	font-weight: 300;
+	font-size: 36px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 20px;
+}
+.btn-facebook, .btn-facebook:focus {
+	border-color: transparent;
+	box-shadow: none;
+	display:block;
+	margin:15px 0 10px -100px;
+	color: #fff !important;
+	font-weight: 600;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+        text-decoration: none;
+	text-shadow:1px 0 1px #333;
+	background: #4c689f;
+	background: -moz-linear-gradient(top,  #4c689f 33%, #3c5c95 67%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(33%,#4c689f), color-stop(67%,#3c5c95));
+	background: -webkit-linear-gradient(top,  #4c689f 33%,#3c5c95 67%);
+	background: -o-linear-gradient(top,  #4c689f 33%,#3c5c95 67%);
+	background: -ms-linear-gradient(top,  #4c689f 33%,#3c5c95 67%);
+	background: linear-gradient(to bottom,  #4c689f 33%,#3c5c95 67%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c689f', endColorstr='#3c5c95',GradientType=0 );
+	transition: background-color 0.1s ease-out 0s;
+	width: 100%;
+}
+
+.btn-facebook i {
+	margin-right: 15px;
+	font-size: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.or {
+	margin: 35px 0px;
+	font-size: 20px;
+	font-weight: 300;
+	height: 1px;
+	line-height: 1px;
+	position: relative;
+}
+.or span {
+	z-index: 10;
+	position: relative;
+	padding: 0 5px;
+	background:#6B1C9B;
+        left:63px;
+}
+.or:after {
+	border-bottom: 1px dashed #fff;
+	content: "";
+	left: -50%;
+	position: absolute;
+	top: 50%;
+	width: 504px;
+}
+.sign-inner a, .terms-text, .terms-text a, .or span, .panel-heading a {
+	color: #fff;
+}
+.panel-heading a{
+	margin:0 5px 0 0;
+}
+.terms-text, .terms-text a{
+	font-size:13px;
+	margin:3px 0 0 0;	
+}
+.login-bx .prof-pic{
+	float:left;
+	width:31%;
+}
+.prof-pic > img{
+	border:1px solid #3c045e;
+	width:100%;
+}
+.sign-inner {
+    float:right;
+	width:88%;
+}
+.sign-inner .form-control {
+	padding-left: 5px !important;
+	height:32px;
+	border-radius:0;
+	font-size:13px;
+	border:1px solid #3c045e;
+	width:100%;
+	margin:0 0 5px 0;
+	color:#000;
+}
+.sign-inner .form-group {
+	position: relative;
+	margin:0 0 8px 0;
+}
+.sign-inner .form-group.pass-one{
+	margin:0;
+}
+.sign-inner .checkbox {
+    margin: 0 0 15px 0;
+}
+
+
+.sign-btn a {
+	background: #1A1A1A;
+	color: #fff !important;
+	padding:8px 45px 12px;
+	font-size: 20px;
+	font-weight: 600;
+	float:left;
+	border-radius:0;
+}
+.sign-btn a:hover{
+	background:#000;
+}
+.sign-inner .login-btn:before, .sign-inner .login-btn:after{
+	display:table;
+	content:"";
+}
+.sign-inner .login-btn:after{
+	clear:both;
+}
+.center-link a {
+    margin-top:5px;
+	font-size:13px;
+}
+
+.terms-text{
+	margin:20px 0 0 0;
+}
+.terms-text a{
+	text-decoration:underline;
+}
+
+.login-bx:before, .login-bx:after {
+    content: "";
+    display: table;
+}
+.login-bx:after {
+    clear: both;
+}
+
+
+
+
+
+
+.ad-wid .sign-btn{
+    margin-left: 15%;
+}
+.center-link{
+    display:inline-block;
+    float:right;
+}
+
+.sign-inner a, .terms-text, .terms-text a, .or span, .panel-heading a {
+    color: #fff;
+}
+.or span {
+    background: none repeat scroll 0 0 #6b1c9b;
+    padding: 0 5px;
+    position: relative;
+    z-index: 10;
+}
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+ .clearfix:after {
+    clear: both;
+}
+ .clearfix:before,  .clearfix:after {
+     clear:both;
+ }
+  .sign-p {
+    color: #fff;
+    font-size: 11pt;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 15pt;
+    margin: 0 0 7pt -70px;
+}
+.error{
+    color:#ff0000;
+    font-size:13px;
+    text-align: left;
+}
+
+/*------09-01-2015----*/
+
+.alert-success {
+background-color: #8bbf61;
+border-color: #8bbf61;
+color: #fff;
+}
+.alert-danger {
+background-color: #bd362f;
+border-color: #bd362f;
+color: #fff;
+}
+.alert {
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+position:relative;
+}
+button.close {
+padding: 0;
+cursor: pointer;
+background: 0 0;
+border: 0;
+right:10px;
+top:6px;
+-webkit-appearance: none;
+}
+.close {
+float: right;
+font-size: 21px;
+font-weight: 700;
+line-height: 1;
+color: #000;
+text-shadow: 0 1px 0 #fff;
+opacity: .2;
+filter: alpha(opacity=20);
+}
+
+.login-msb-otr {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+}

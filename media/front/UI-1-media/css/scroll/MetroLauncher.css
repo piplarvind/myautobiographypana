@@ -1,0 +1,724 @@
+
+
+/* Dashboard Position */
+#MetroDashboard{
+	padding-top: 1px;
+	padding-bottom: 20px;
+	color: white;
+    
+}
+.mdTitle{
+	font-weight: normal;
+	font-size: 48px;
+	color: white;
+}
+
+.mdOptionContainer{
+	padding-top: 0;
+	/*margin-left: 30px;*/
+	margin-left: 10px;
+	float: left;
+	width: 220px;
+	display: none;
+}
+
+/* Options */
+.mdOption{
+	background: #736357;
+	cursor: pointer;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	position: relative;
+	display: none;
+}
+.mdOption:hover{
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 30px, rgba(255, 255, 255, 0.25) 0px 0px 0px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 30px, rgba(255, 255, 255, 0.25) 0px 0px 0px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 30px, rgba(255, 255, 255, 0.25) 0px 0px 0px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+#mbCoverUp{
+	position: fixed;
+	top: 0px;
+	left: 0px;	
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	display: none;
+}
+
+.loadingContainer{
+	color: white;
+	position: fixed;
+	top: 40%;
+	left: 45%;
+}
+
+.loadingicon{
+	font-size: 80px;
+}
+
+.loading{
+	color: white;
+	font-size: 40px;
+}
+
+/* Sizes */
+.s2x2{
+	width: 100px;
+	height: 100px;
+}
+.s2x4{
+	width: 210px;
+	height: 100px;
+}
+.s4x4{
+	width: 210px;
+	height: 210px;	
+}
+
+/* Layaut */
+.s2x2 .labelfijo{
+	position: absolute;
+	float: left;
+	top: 75px;
+	left: 5px;
+	z-index: 9999999;
+}
+.s2x4 .labelfijo{
+	position: absolute;
+	float: left;
+	top: 75px;
+	left: 5px;
+	z-index: 9999999;
+}
+.s4x4 .labelfijo{
+	position: absolute;
+	float: left;
+	top: 185px;
+	left: 5px;
+	z-index: 9999999;
+}
+
+.s2x2 .iconfijo{
+	position: relative;
+	top: 10px;
+	font-size: 50px;
+}
+.s2x4 .iconfijo{
+	position: relative;
+	top: 10px;
+	font-size: 50px;
+}
+.s4x4 .iconfijo{
+	position: relative;
+	top: 30%;
+	font-size: 50px;
+}
+
+
+/* Colors */
+.purp{
+	background-color: #92278f;
+}
+.softpurp{
+	background-color: #a864a8;
+}
+.darkpurp{
+	background-color: #630460;
+}
+.blue{
+	background-color: #0072bc;
+}
+.softblue{
+	background-color: #00bff3;
+}
+.darkblue{
+	background-color: #1b1464;
+}
+.pink{
+	background-color: #ec008c;
+}
+.softpink{
+	background-color: #f06eaa;
+}
+.darkpink{
+	background-color: #d2007c;
+}
+.black{
+	background-color: #000000;
+}
+.softblack{
+	background-color: #acacac;
+}
+.darkblack{
+	background-color: #464646;
+}
+.green{
+	background-color: #00a651;
+}
+.softgreen{
+	background-color: #00e04a;
+}
+.darkgreen{
+	background-color: #009f34;
+}
+.yellow{
+	background-color: #ffff00;
+}
+.softyellow{
+	background-color: #ffff83;
+}
+.darkyellow{
+	background-color: #d6d600;
+}
+.orange{
+	background-color: #f7941d;
+}
+.softorange{
+	background-color: #ffac49;
+}
+.darkorange{
+	background-color: #df7900;
+}
+.teal{
+	background-color: #027fb1;
+}
+.softteal{
+	background-color: #00a3e4;
+}
+.darkteal{
+	background-color: #00678f;
+}
+
+
+
+
+/* Swiper */
+
+.swiper-scrollbar {
+		width: 100%;
+		height: 4px;
+		border-radius: 10px;
+		position: absolute;
+		left:0;
+		bottom:2px;
+		-ms-touch-action: none;
+		background: none;
+		cursor: move;
+	}
+	.swiper-scrollbar-drag {
+		height: 100%;
+		width: 300px;
+		position: relative;
+		background: rgba(0,0,0,0.5);
+		border-radius: 10px;
+		
+	}
+
+/* Scroll Container */
+.swiper-scroll-container {
+	width:640px;
+	height:300px;
+	/*border: 1px solid #aaa;*/
+	cursor: move;
+}
+.swiper-scroll-container .swiper-slide {
+	width: 1520px !important;	
+	height:300px;
+}
+
+.swiper-scrollbar {
+	border-radius: 10px;
+	position: relative;
+	-ms-touch-action: none;
+	background: rgba(0,0,0,0.1)
+}
+.swiper-scrollbar-drag {
+	height: 100%;
+	width: 300px;
+	position: relative;
+	background: rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+.swiper-scrollbar-cursor-drag {
+	cursor: move;
+}
+
+/* Animations */
+.animated {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+.animated.fast {
+	-webkit-animation-duration: 0.8s;
+		-moz-animation-duration: 0.8s;
+		-ms-animation-duration: 0.8s;
+		-o-animation-duration: 0.8s;
+		animation-duration: 0.8s;
+}
+.animated.fast5 {
+	-webkit-animation-duration: 0.5s;
+		-moz-animation-duration: 0.5s;
+		-ms-animation-duration: 0.5s;
+		-o-animation-duration: 0.5s;
+		animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+
+@-moz-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+}
+
+@-o-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-o-transform: translateX(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	-moz-animation-name: fadeInRight;
+	-o-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+
+@-moz-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+}
+
+@-o-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-o-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+	-moz-animation-name: fadeInLeft;
+	-o-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+}
+
+/* .Swiper */
+
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+
+/* Swiper Styles */
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform, left, top;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+	
+	-moz-transition-property:-moz-transform, left, top;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+	
+	-o-transition-property:-o-transform, left, top;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+	
+	-ms-transition-property:-ms-transform, left, top;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+	
+	transition-property:transform, left, top;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+	
+}
+.swiper-slide {
+	float: left;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+	-ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+	-ms-touch-action: pan-x;
+}
+
+/* Specify Swiper's Size: */
+.swiper-container, .swiper-slide {
+	width: 210px;
+	height: 100px;
+}
+
+
+.swiper-scrollbar {
+	border-radius: 10px;
+	position: relative;
+	-ms-touch-action: none;
+	background: rgba(0,0,0,0.1)
+}
+.swiper-scrollbar-drag {
+	height: 200px;
+	width: 100%;
+	position: relative;
+	background: rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+.swiper-scrollbar-cursor-drag {
+	cursor: move;
+}
+
+
+
+
+.red-slide {
+	background: #ca4040;
+}
+.blue-slide {
+	background: #4390ee;
+}
+.orange-slide {
+	background: #ff8604;
+}
+.green-slide {
+	background: #49a430;
+}
+.pink-slide {
+	background: #973e76;
+}
+
+.swiper-scrollbar {
+		width: 100%;
+		height: 4px;
+		border-radius: 10px;
+		position: absolute;
+		left:0;
+		bottom:2px;
+		-ms-touch-action: none;
+		background: none
+	}
+	.swiper-scrollbar-drag {
+		height: 100px;
+		width: 100%;
+		position: relative;
+		background: rgba(0,0,0,0.5);
+		border-radius: 10px;
+		
+	}
+
+/* Scroll Container */
+.swiper-scroll-container {
+	
+	/*width:100%;*/
+	/*height:100%;*/
+	/*border: 1px solid #aaa;*/
+}
+.swiper-scroll-container .swiper-slide {
+	width: 2520px !important;	
+	/*height: 280px;*/
+}
+
+
+
+
+
+/*!
+ *  Font Awesome 3.0.2
+ *  the iconic font designed for use with Twitter Bootstrap
+ *  -------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation
+ *  can be found at: http://fortawesome.github.com/Font-Awesome/
+ *
+ *  License
+ *  -------------------------------------------------------
+ *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
+
+ *  Contact
+ *  -------------------------------------------------------
+ *  Email: dave@davegandy.com
+ *  Twitter: http://twitter.com/fortaweso_me
+ *  Work: Lead Product Designer @ http://kyruus.com
+ */
+
+
+
+/* Nested Swipers*/
+.s2x4.swiper-slide{
+	width: 210px;
+	height: 100px;
+}
+
+.s4x4.swiper-slide{
+	width: 210px;
+	height: 210px;
+}
+
+.s2x2.swiper-slide{
+	width: 100px;
+	height: 100px;
+}
+
+.mdOption .swiper-scroll-container .swiper-slide{
+	width: 0px;
+	height: 0px;
+}
+
+.swiper-scroll-container .swiper-slide{
+	width: 0px;
+}
+
+.s2x2.swiper-container, .swiper-nested1{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+.s2x2.swiper-slide{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+.s2x4.swiper-container, .swiper-nested2{
+	width: 210px;
+	height: 100px;
+	position: absolute;
+}
+.s4x4.swiper-container, .swiper-nested4{
+	width: 210px;
+	height: 210px;
+	position: absolute;
+}
+
+
+
+/* Mobile Phones */
+@media screen and (max-width: 450px) and (max-width: 767px) {
+
+/* Dashboard Position */
+#MetroDashboard{
+	padding-top: 0px;
+	padding-bottom: 1px;
+	color: white;
+    
+}
+
+.mdOptionContainer{
+	padding-top: 0px;
+	margin-left: 5px;
+	float: left;
+	width: 190px;
+	display: none;
+}
+
+
+/* Sizes */
+.s2x2{
+	width: 75px;
+	height: 75px;
+}
+.s2x4{
+	width: 160px;
+	height: 75px;
+}
+.s4x4{
+	width: 160px;
+	height: 160px;	
+}
+
+
+.s2x2 .labelfijo{
+	display: none;
+}
+.s2x4 .labelfijo{
+	display: none;
+}
+.s4x4 .labelfijo{
+	display: none;
+}
+
+/* Internal img sizes */
+/* Sizes */
+.s2x2 img{
+	width: 75px;
+	height: 75px;
+}
+.s2x4 img{
+	width: 160px;
+	height: 75px;
+}
+.s4x4 img{
+	width: 160px;
+	height: 160px;	
+}
+
+/* Nested Swipers */
+.s2x2.swiper-container, .swiper-nested1{
+	width: 75px;
+	height: 75px;
+	position: absolute;
+}
+
+.s2x2.swiper-slide{
+	width: 75px;
+	height: 75px;
+	position: absolute;
+}
+
+.s2x4.swiper-container, .swiper-nested2{
+	width: 160px;
+	height: 75px;
+	position: absolute;
+}
+.s4x4.swiper-container, .swiper-nested4{
+	width: 160px;
+	height: 160px;
+	position: absolute;
+}
+
+}

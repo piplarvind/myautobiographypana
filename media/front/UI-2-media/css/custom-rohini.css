@@ -1,0 +1,31 @@
+.add-user-inn .panel {
+    float: right;
+    width: 65%;
+}
+.upload-demo {
+    float: left;
+	margin-top:5px;
+}
+.post-new-event .share, .single-post .panel{
+    width: 100%;
+}
+ul.timeline-list li.media:first-child:before{
+	top:65px;
+}
+.timeline-user-pic .timeline-user-thumb {
+    background: none !important;
+    border: 0 none !important;
+    padding: 0 !important;
+}
+.sidebar-menu ul.about-block li a{
+	display: inline-block;
+    line-height: normal;
+	vertical-align: top;
+    width: 78%;
+    word-wrap: break-word; 
+	font-weight:normal;
+	
+}
+.sidebar-menu ul.about-block li a:hover{
+	color:#fff !important;
+}

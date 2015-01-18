@@ -1,0 +1,11 @@
+#headbar {
+   z-index: 99999;
+   left:0px;
+   top:-250px;
+   height:144px;
+   width:102.5%;
+   
+   padding-top: -200px;
+   box-shadow: 0 0 1050px 0;
+}
+

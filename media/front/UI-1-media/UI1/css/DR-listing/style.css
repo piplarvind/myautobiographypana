@@ -1,0 +1,443 @@
+
+/* set img max-width */
+img {
+	max-width: 100%;
+	height: auto;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* ie 8 img max-width */
+@media \0screen {
+  img { width: auto;}
+}
+
+/* grid3 post */
+.loops-wrapper.grid3 .post {
+	width: 23%;
+	float: left;
+	margin-left: 1.4%;
+	margin-bottom: 18px;
+	position: relative;
+}
+.grid3.sidebar-none .post {
+	width: 32.6%;
+	margin-left: 1.05%;
+	margin-bottom: 10px;
+}
+
+.loops-wrapper.grid3 .post-inner {
+	padding: 15px 6.1% 8px;
+}
+.loops-wrapper.grid3 .post-title {
+	font-size: 1.4em;
+	line-height: 1.4em;
+	margin: 0 0 10px;
+	padding: 0;
+}
+.loops-wrapper.grid3 .post-meta {
+	margin-top: -5px;
+}
+
+/* grid2 post */
+.loops-wrapper.grid2 .post {
+	width: 49.25%;
+	float: left;
+	margin-left: 1.5%;
+	margin-bottom: 10px;
+	position: relative;
+}
+.grid2.sidebar-none .post {
+	width: 49.5%;
+	margin-left: 1%;
+	margin-bottom: 10px;
+}
+.loops-wrapper.grid2 .post-inner {
+	padding: 15px 6.1% 8px;
+}
+.loops-wrapper.grid2 .post-title {
+	font-size: 1.5em;
+	line-height: 1.3em;
+	margin: 0 0 10px;
+	padding: 0;
+}
+.loops-wrapper.grid2 .post-meta {
+	margin-top: -5px;
+}
+
+/* clear grid posts */
+.loops-wrapper.grid4 .post:nth-of-type(4n+1),
+.loops-wrapper.grid3 .post:nth-of-type(3n+1),
+.loops-wrapper.grid2 .post:nth-of-type(2n+1),
+.loops-wrapper.grid2-thumb .post:nth-of-type(2n+1) {
+	margin-left: 0;
+	clear: left;
+}
+
+/************************************************************************************
+BUILDER
+*************************************************************************************/
+/* builder row */
+.full_width .themify_builder_row .row_inner {
+	width: 998px; /* same width as .pagewidth */
+	max-width: 100%;
+	margin: auto;
+}
+.full_width .themify_builder_row.fullwidth .row_inner {
+	width: auto;
+	padding: 0;
+}
+
+/* reset post boxed style within post/page */
+.post-content .post,
+.page-content .post,
+.page-content .post.purple,
+.page-content .post.magenta,
+.page-content .post.teal,
+.page-content .post.lime,
+.page-content .post.brown,
+.page-content .post.pink,
+.page-content .post.orange,
+.page-content .post.blue,
+.page-content .post.red,
+.page-content .post.green,
+.page-content .post.white,
+.page-content .post.black {
+	background: none;
+}
+.post-content .post .post-inner,
+.page-content .post .post-inner {
+	padding: 0;
+}
+
+/* remove post icons */
+.module .post-icon {
+	display: none;
+}
+
+/* portfolio post */
+.module.module-portfolio .post-inner {
+	padding-top: 30px;
+}
+
+/* reset .post-inner clear */
+.module.loops-wrapper.grid2-thumb .post-inner,
+.module.loops-wrapper.list-thumb-image .post-inner,
+.shortcode.loops-wrapper.grid2-thumb .post-inner,
+.shortcode.loops-wrapper.list-thumb-image .post-inner {
+	clear: none;
+	overflow: hidden;
+}
+
+.module .post-date {
+	display: inline-block;
+}
+
+/* portfolio post */
+.module-portfolio .portfolio-post {
+	overflow: visible;
+}
+
+/* tab module */
+.ui.module-tab.minimal .tab-content {
+	color: #fff;
+}
+
+/* tile sizes */
+.tile.small {
+	width: 158px;
+	height: 158px;
+}
+.tile.medium {
+	width: 326px;
+	height: 158px;
+}
+.tile.large {
+	width: 326px;
+	height: 326px;
+}
+
+
+/* tile image */
+.tile.image {
+	overflow: visible; /* for flip animation */
+}
+.tile.image .tile-overlay a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-left: -20px;
+	margin-top: -15px;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+.tile.image .tile-overlay a:hover {
+	text-decoration: none;
+}
+.tile.image .tile-inner {
+	height: 100%;
+}
+
+
+/* tile overlay */
+.tile-overlay {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #f26522; /* default color */
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	/*opacity: 0;*/
+
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+.portfolio-post .tile-overlay {
+	/*opacity: 0;*/
+}
+.tile-overlay:hover {
+	opacity: 1;
+}
+
+/* tile [list_posts] shortcode */
+.tile .loops-wrapper.list-posts .post {
+	padding: 0 !important;
+	background: none !important;
+	margin-bottom: 15px;
+}
+.tile .loops-wrapper.list-posts .post-inner {
+	padding: 0;
+	display: inline;
+	float: left;
+	clear: none;
+}
+.tile .loops-wrapper.list-posts .post-image {
+	margin: 2px 12px 0 0;
+	width: 45px;
+	height: 45px;
+	float: left;
+}
+.tile .loops-wrapper.list-posts .post-title {
+	font-size: 120%;
+	margin: 0 0 3px;
+	padding: 24px 0 0 !important;
+	background: none !important;
+}
+.tile .loops-wrapper.list-posts .post-meta {
+	font-size: 1em;
+	position: absolute;
+	top: 2px;
+	left: 0;
+}
+.tile .loops-wrapper.list-posts .post-meta .separator,
+.tile .loops-wrapper.list-posts .post-icon {
+	display: none;
+}
+
+/* tile [post_slider] shortcode */
+.tile .shortcode.post-slider .post {
+	background: none;
+}
+.tile .shortcode.post-slider .post-title {
+	font-size: 120%;
+}
+
+/* tile [twitter] shortcode */
+.tile .shortcode.twitter-list .twitter-timestamp a {
+	color: rgba(255,255,255,.7);
+	text-decoration: none;
+}
+.tile .shortcode.twitter-list .follow-user a {
+	text-decoration: none;
+}
+
+/* tile button shortcode style reset */
+.tile .shortcode.button {
+	height: auto !important;
+	width: auto !important;
+	text-align: center !important;
+	margin-left: 0 !important;
+}
+
+/* disable IE zoom and pan */
+.tile-post.image,
+.tile-post.map,
+.portfolio-post {
+	-ms-touch-action: none;
+}
+
+/* tile-overlay flip transition */
+.tile-post.image .tile-flip-wrapper,
+.tile-post.map .tile-flip-wrapper,
+.portfolio-post .tile-flip-wrapper {	
+	-webkit-perspective: 500;
+	-webkit-transform-style: preserve-3d;
+	perspective: 600px;
+	transform-style: preserve-3d;
+}
+.tile-post.image .tile-flip,
+.tile-post.map .tile-flip,
+.portfolio-post .tile-flip {
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+	transform-style: preserve-3d;
+	transition: -webkit-transform 1s;
+	transition: transform 1s;
+	max-width: 100%;
+	width:100%;
+}
+.tile-post.image .tile-flip,
+.tile-post.map .tile-flip {
+	position: absolute;
+	height: 158px;
+	width: 326px; /* tile large and medium */
+}
+.tile-post.small .tile-flip {
+	width: 158px;
+}
+.tile-post.large .tile-flip {
+	height: 326px;
+}
+.tile-post.image .side,
+.tile-post.map .side,
+.portfolio-post .side{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+
+
+.tile-post.image .front,
+.tile-post.map .front,
+.portfolio-post .front{
+	position: relative;
+	z-index: 50;
+	top:-15px;
+}
+.tile-post.image .back,
+.tile-post.map .back,
+.portfolio-post .back{
+	position: absolute;
+	z-index: 10;
+	padding:15px;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+.tile-flipped {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+.tile-flipped .back {
+	z-index: 999 !important;
+}
+
+/* Edit button*/
+.tile .tile-overlay a.edit-button {
+	display: inline;
+}
+
+/* Portfolio Flip Animation */
+.portfolio-post {
+	overflow: visible; /* for flip animation */
+}
+
+/************************************************************************************
+POST COLORS
+*************************************************************************************/
+/* purple */
+.post.purple,
+.tile.purple,
+.purple.tile-overlay,
+.portfolio-post.purple .tile-overlay {
+	background-color: #932091;
+}
+
+/* magenta */
+.post.magenta,
+.tile.magenta,
+.magenta.tile-overlay,
+.portfolio-post.magenta .tile-overlay {
+	background-color: #ff3097;
+}
+
+/* teal */
+.post.teal,
+.tile.teal,
+.teal.tile-overlay,
+.portfolio-post.teal .tile-overlay {
+	background-color: #00aaa9;
+}
+
+/* lime */
+.post.lime,
+.tile.lime,
+.lime.tile-overlay,
+.portfolio-post.lime .tile-overlay {
+	background-color: #8abb25;
+}
+
+/* brown */
+.post.brown,
+.tile.brown,
+.brown.tile-overlay,
+.portfolio-post.brown .tile-overlay {
+	background-color: #a15100;
+}
+
+/* pink */
+.post.pink,
+.tile.pink,
+.pink.tile-overlay,
+.portfolio-post.pink .tile-overlay {
+	background-color: #e878b8;
+}
+
+/* orange */
+.post.orange,
+.tile.orange,
+.orange.tile-overlay,
+.portfolio-post.orange .tile-overlay {
+	background-color: #f29603;
+}
+
+/* blue */
+.post.blue,
+.tile.blue,
+.blue.tile-overlay,
+.portfolio-post.blue .tile-overlay {
+	background-color: #09a3e2;
+}
+
+/* red */
+.post.red,
+.tile.red,
+.red.tile-overlay,
+.portfolio-post.red .tile-overlay {
+	background-color: #e82900;
+}
+
+/* green */
+.post.green,
+.tile.green,
+.green.tile-overlay,
+.portfolio-post.green .tile-overlay {
+	background-color: #2c9633;
+}
+
+/* white */
+.post.white,
+.tile.white,
+.white.tile-overlay,
+.portfolio-post.white .tile-overlay {
+	background-color: #FFF;
+}
+
+/* black */
+.post.black,
+.tile.black,
+.black.tile-overlay,
+.portfolio-post.black .tile-overlay {
+	background-color: #000;
+}
+

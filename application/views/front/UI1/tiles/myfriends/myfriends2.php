@@ -1,0 +1,6 @@
+<div class="feature">
+<h2>My friends feed 2</h2>
+    <div class="feature_detail news-slide">
+        <p><i class="fa fa-users"></i>  <!--<img src="img/news-img1.png" class="float_left" />--> Ukraine's parliament votes to drop the country's non-aligned status and work towards Nato membership, a move quickly criticised  Ukraine's parliament votes to drop the country's non-aligned status and work towards Nato membership,...</p>
+    </div>
+</div>
